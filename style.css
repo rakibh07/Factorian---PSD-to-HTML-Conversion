@@ -1,0 +1,1278 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+    Reset Css
+==========================================
+
+
+
+==== INDEX PAGE CSS
+
+
+** - Default CSS
+** - Backgrounds
+** - Preloaders CSS
+** - Header area CSS
+** - Slider area CSS
+** - Service area CSS
+** - CTA area CSS
+** - Footer area CSS
+** - Breadcroumb area CSS
+** - Team area CSS
+** - Gallery CSS
+** - Quote form CSS
+** - Hovers CSS
+** - Widgets CSS
+** - Single post CSS
+** - Comments CSS
+** - 404 CSS
+
+
+*/
+
+
+/*==========
+Default CSS
+===========*/
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   /* margin: 0;*/
+}
+
+h3{
+	font-size: 22px;
+	font-weight: 700;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	line-height: 28px;
+}
+
+
+
+
+
+/*=================
+Backgrounds Images
+==================*/
+
+.slide-bg-1 {
+    background: url(img/slide-bg-1.jpg)
+}
+.slide-bg-2 {
+    background: url(img/slide-bg-2.jpg)
+}
+
+
+.service-bg-1{
+	background-image: url(img/service-bg-2.jpg);
+}
+.service-bg-2{
+	background-image: url(img/service-bg-0.jpg);
+}
+.service-bg-3{
+	background-image: url(img/blog-bg-2.jpg);
+}
+.service-bg-4{
+	background-image: url(img/blog-bg-3.jpg);
+}
+.service-bg-5{
+	background-image: url(img/boxed-bg-1.jpg);
+}
+.service-bg-6{
+	background-image: url(img/boxed-bg-2.jpg);
+}
+
+
+
+
+.project-bg-1{
+	background-image: url(img/boxed-bg-1.jpg);
+}
+.project-bg-2{
+	background-image: url(img/boxed-bg-2.jpg);
+}
+.project-bg-3{
+	background-image: url(img/boxed-bg-3.jpg);
+}
+
+
+.blog-bg-1{
+	background-image: url(img/blog-bg-1.jpg);
+}
+
+.blog-bg-2{
+	background-image: url(img/blog-bg-2.jpg);
+}
+.blog-bg-3{
+	background-image: url(img/blog-bg-3.jpg);
+}
+
+
+.team-bg-1{
+	background-image: url(img/team-bg-1.jpg);
+}
+.team-bg-2{
+	background-image: url(img/team-bg-2.jpg);
+}
+.team-bg-3{
+	background-image: url(img/team-bg-3.jpg);
+}
+.team-bg-4{
+	background-image: url(img/team-bg-4.jpg);
+}
+.team-bg-5{
+	background-image: url(img/team-bg-5.jpg);
+}
+.team-bg-6{
+	background-image: url(img/team-bg-6.jpg);
+}
+
+
+
+
+.work-bg-1{
+	background-image: url(img/work-bg-1.jpg);
+}
+.work-bg-2{
+	background-image: url(img/work-bg-2.jpg);
+}
+.work-bg-3{
+	background-image: url(img/work-bg-3.jpg);
+}
+.work-bg-4{
+	background-image: url(img/work-bg-4.jpg);
+}
+.work-bg-5{
+	background-image: url(img/work-bg-5.jpg);
+}
+.work-bg-6{
+	background-image: url(img/work-bg-6.jpg);
+}
+
+
+
+/*==================
+Preloaders CSS
+===================*/
+
+/*slider Preloaders CSS */
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+
+
+.homepage-slides-wrapper {
+    position: relative;
+}
+
+.slide-preloader-wrap {
+    position:  absolute;
+    left: 0;
+    top: 0;
+    background: #f6bd49;
+    width:  100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.slide-preloader-wrap .spinner {
+    top: 50%;
+    left:  50%;
+    position:  absolute;
+    margin-left:  -20px;
+    margin-top: -20px;
+    margin: 0;
+}
+
+
+
+/*site-preloader*/
+
+.spinner-2 {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #333;
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout2 1.0s infinite ease-in-out;
+  animation: sk-scaleout2 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout2 {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout2 {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+.site-preloader {
+    position:  fixed;
+    background:  #fff;
+    width:  100%;
+    height:  100%;
+    z-index:  999;
+}
+
+.site-preloader .spinner-2 {
+    top: 50%;
+    left:  50%;
+    margin:  0;
+    margin-left:  -20px;
+    margin-top:  -20px;
+    position:  absolute;
+}
+
+
+
+/*================
+Header area CSS
+==================*/
+
+/*Header-Top Area*/
+
+.header-top-area {
+    background-color: #222;
+    font-size: 15px;
+    padding: 10px 0;
+}
+.header-top-area a, .header-top-area {
+    color: #fff;
+}
+
+.header-top-area i.fa {color: #f7be49;}
+.seprator {
+    color: #949494;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+
+/*=========
+LOGO CSS*
+==========*/
+
+
+.logo {
+    padding: 12px 0;
+    text-transform:  uppercase;
+}
+
+.logo a {
+    
+    text-decoration:  none;
+    color:  #494949;
+}
+
+.logo h1 {
+    font-size:  16px;
+    border: 3px solid #494949;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+
+
+
+/*===============
+menu search bar
+=================*/
+
+.menu-search-bar{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -20px;
+}
+
+.menu-search-bar::after {
+    font-family: fontawesome;
+    content: "\f002";
+    position: absolute;
+    right: 15px;
+    top: 13%;
+}
+
+.menu-search-bar input[type="search"] {
+    border: none;
+    cursor: pointer;
+    text-indent: -999px;
+    height: 40px;
+    padding: 5px 15px;
+    width: 40px;
+    background: none;
+    transition: all 0.2s;
+}
+.menu-search-bar form {
+    position:  relative;
+    z-index:  9;
+}
+.menu-search-bar input[type="search"]:focus {
+    text-indent:  0;
+    border: 1px solid #ddd;
+    cursor:  text;
+    background:  #fff;
+    width: 200px;
+}
+
+
+
+
+/*==============
+Main Menu CSS
+===============*/
+
+
+.mainmenu{
+	padding-right: 40px;
+}
+.mainmenu ul {
+    text-align:  right;
+    margin:  0;
+    padding:  0;
+    text-align:  right;
+}
+
+.mainmenu li {
+    display:  inline-block;
+    position:  relative;
+
+}
+
+.mainmenu li a {
+    padding: 30px 17px;
+    display:  block;
+    text-transform:  uppercase;
+    color:  #222;
+    font-weight:  700;
+    font-size:  14px;
+    transition: all .3s;
+}
+
+.mainmenu li:hover>a,
+.current_page_item > a {
+	background-color: #f4f4f4;
+	text-decoration: none;
+}
+
+
+/*==============
+Drop Down Menu
+================*/
+
+.mainmenu ul li ul {
+    position:  absolute;
+    top: 110px;
+    left: 0;
+    width: 200px;
+    background:  #fff;
+    text-align:  left;
+    transition:  all 0.3s;
+    opacity:  0;
+}
+
+.mainmenu ul li ul li {
+    display:  block;
+}
+
+.mainmenu ul li ul li a {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-transform: none;
+}
+
+
+.mainmenu ul li:hover ul {
+    opacity: 1;
+    z-index: 9;
+    top: 88px;
+}
+
+/*====================
+Mobile menu-search-bar
+=====================*/
+
+.responsive-menu-wrap{
+	display: none;
+}
+
+
+
+
+
+/*==============
+Homepage-Slider 
+================*/
+
+.single-slide-item {
+    background-size:  cover;
+    background-position:  center;
+    background-color:  #ddd;
+    height: 599px;
+    color:  #fff;
+}
+
+.slide-item-table {
+    display:  table;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-item-tablecell {
+    display:  table-cell;
+    vertical-align:  middle;
+}
+
+.single-slide-item h2 {
+    font-size: 60px;
+    margin: 0 0 30px;
+}
+
+.single-slide-item p {
+    font-size: 24px;
+}
+
+
+/*Factorian button*/
+
+.factorian-btn {
+    display: inline-block;
+    background: #f7be49;
+    padding: 12px 12px;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 400;
+    color: #222;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.factorian-btn.slide-btn {
+    margin-top: 20px;
+    text-decoration:  none;
+    color: #222;
+}
+
+
+
+
+/*==============================
+Home page Slider Owl-Carousel
+===============================*/
+
+.homepage-slides .owl-nav div {
+    position:  absolute;
+    top: 50%;
+    left:  50px;
+    color:  #fff;
+    height:  40px;
+    width:  40px;
+    border:  2px solid;
+    text-align:  center;
+    line-height: 35px;
+    margin-top: -20px;
+    opacity:.8;
+}
+.homepage-slides.owl-nav div:hover{
+    opacity:1;
+}
+
+.homepage-slides .owl-nav div.owl-next {
+    left: auto;
+    right:  50px;
+}
+
+
+
+
+/*========================
+service-item/ Content area
+==========================*/
+.factorian-content-block {
+    padding: 100px 0;
+}
+
+.service-item-bg {
+    height: 180px;
+    background-color:  #ddd;
+    background-position:  center;
+    background-size: cover;
+}
+.service-item-bg h3{
+	    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/*==================
+service-readmore-btn
+====================*/
+
+.service-readmore-btn {
+    color:  #222;
+    font-weight:  700;
+}
+
+.service-readmore-btn:hover {
+    text-decoration: none;
+    color: #f7be49;
+}
+
+.service-readmore-btn i.fa {
+    padding-left: 2px;
+    transition:all 0.3s;
+}
+
+.service-readmore-btn:hover i.fa {
+    padding-left: 5px;
+}
+
+
+
+
+/*=======================
+single-sml-service-item
+========================*/
+
+.single-sml-service-item {
+    color:  #222;
+    text-decoration:  none;
+    border-bottom:  1px solid #e9e9e9;
+    display:  block;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.single-sml-service-item img {
+    float:  left;
+    margin-right: 20px;
+}
+
+.single-sml-service-item p:last-child {
+    /* padding-bottom: 0; */
+    margin: 0;
+}
+
+.single-sml-service-item h4 {
+    font-size: 20px;
+    font-weight:  700;
+    margin: 0 0 5px;
+}
+
+.single-sml-service-item:hover {
+    text-decoration: none;
+    color:  #222;
+    opacity: 0.8;
+}
+
+
+
+/*========================
+Factorian- Contact Area
+=========================*/
+
+.factorian-ctn-area {
+    background-color:  #222;
+    color:  #fff;
+    padding: 40px 0;
+}
+
+.factorian-ctn-area h2 {
+    margin: 10px 0;
+    
+}
+
+
+
+/*=============
+Who we are?
+==============*/
+.who-we-are-text {
+    padding: 0 40px;
+}
+
+/*single-promo-item*/
+
+.single-promo-item {
+    padding-left: 45px;
+    position:  relative;
+    margin-top: 70px;
+}
+
+.single-promo-item i.fa {
+    position:  absolute;
+    left:  0;
+    color: #f7be49;
+    height:  25px;
+    width:  25px;
+    border: 1px solid #f7be49;
+    text-align:  center;
+    line-height: 23px;
+    border-radius:  50%;
+}
+
+
+
+
+/*=================================
+Why you should working with us?
+==================================*/
+
+.factorian-content-block.section-grey {
+    background-color: #f2f5f7;
+}
+.check-list li::before {
+	font-family:  fontawesome;
+	content: "\f00c";
+	padding-right:  10px;
+	color: #f7be49;
+}
+
+.check-list {
+    line-height: 35px;
+    padding-top: 15px;
+    font-weight: 700;
+}
+
+
+
+
+
+/*=========================
+Check some of our works.
+==========================*/
+
+.section-title {
+    width: 415px;
+    text-align: center;
+    margin: 0 auto 50px;
+    margin-bottom: 50px;
+}
+
+.boxed-preview {
+    height: 180px;
+    margin-bottom: 30px;
+}
+
+.single-box-item {
+    color: #6e6e6e;
+    margin-bottom: 30px;
+    display:  block;
+}
+
+.single-box-item h4 {
+    color:  #222;
+    font-weight: 700;
+}
+
+.single-box-item:hover {
+    text-decoration: none;
+    color: #6e6e6e;
+    opacity: 0.8;
+}
+
+
+
+
+/*=================
+testimonial-area
+==================*/
+
+.factorian-content-block.testimonial-area {
+    padding: 80px 0;
+    border-top: 1px solid #ddd;
+}
+
+.testimonial-content {
+    font-style:  italic;
+    color: #666;
+}
+
+.testimonial-content p {
+    font-size: 15px;
+}
+
+.testimonial-content h4 {
+    font-size: 69px;
+}
+
+.single-testimonial-item h4 {
+    font-size:  16px;
+    color:  #666666;
+    font-weight: 700;
+    margin: 20px 0 0;
+}
+
+.single-testimonial-item h4 span {
+    display:  block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.single-testimonial-item {
+    margin-bottom: 30px;
+}
+
+.testimonial-content i.fa {
+    font-size:  150%;
+}
+
+
+
+
+/*=====================
+Site Footer Area CSS
+======================*/
+
+.site-footer {
+    background: #222;
+}
+.footer-logo {
+    font-size:  16px;
+    text-transform: uppercase;
+    display:  inline-block;
+    background:  #fff;
+    color:  #222;
+    padding: 10px 20px;
+    font-weight:  700;
+    border-radius: 3px;
+    margin: 0 0 20px;
+}
+
+
+.footer-top-area, .footer-top-area a{
+	color: #cacaca;
+}
+.footer-wid {
+    padding: 80px 0;
+}
+.footer-wid-title {
+    font-size: 18px;
+    margin: 0 0 20px;
+    color: #fff;
+}
+.footer-wid li:hover a {
+    color: #f7be49;
+}
+
+.footer-copyright-area {
+    color:  #fff;
+    background: #1d1d1d;
+    padding: 15px 0;
+}
+
+
+
+
+
+
+
+
+/*=================================
+***********************************
+		About Page CSS
+***********************************
+===================================*/
+
+
+/*======================
+About BreadCrumb Area
+=======================*/
+
+.factorian-content-block.factorian-breadcrumb {
+    padding: 40px 0;
+    font-size:  13px;
+    color:  #666;
+}
+
+
+.factorian-content-block.factorian-breadcrumb h2 {
+    color:  #222;
+    margin: 0 0 5px;
+}
+
+.factorian-content-block.factorian-breadcrumb h3 {
+    color: #222;
+    margin: 20px 0;
+}
+
+
+/*border-spacer-85*/
+.spacer-85 {
+    height: 85px;
+}
+
+
+.border-spacer-85 {
+    border-bottom: 1px solid #eaeef1;
+    margin-bottom:  65px;
+    padding-top: 65px;
+}
+
+
+/*=================================
+			About Page
+We do awesome works for our clients. 
+Check some of our works.
+==================================*/
+
+.single-team-item {
+    height:  355px;
+    float:  left;
+    width: 33.3333%;
+    background-color:  #ddd;
+    background-position:  center;
+    background-size:  cover;
+    position:  relative;
+    overflow:  hidden;
+}
+
+.team-info-hover {
+    position:  absolute;
+    color:  #fff;
+    left:  0;
+    bottom:  -30px;
+    padding:  15px;
+    padding-top:  50px;
+    opacity:  0;
+    visibility:  hidden;
+    z-index:  -1;
+    transition: .2s;
+	width: 100%;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 1%, rgba(0,0,0,0) 2%, rgba(0,0,0,0.52) 39%, rgba(0,0,0,1) 73%);
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 2%,rgba(0,0,0,0.52) 39%,rgba(0,0,0,1) 73%);
+background: linear-gradient(to bottom, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 2%,rgba(0,0,0,0.52) 39%,rgba(0,0,0,1) 73%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+}
+
+.single-team-item:hover .team-info-hover {
+    opacity:  1;
+    visibility:  visible;
+    z-index: 1;
+    bottom: 0;
+}
+
+
+
+/*============================================
+**********************************************
+			Single Service Page CSS
+**********************************************
+==============================================*/
+
+
+/*Single Service BreadCrumb*/
+.border-spacer-45 {
+    height: 45px;
+}
+
+.factorian-service-breadcrumb {
+    padding: 40px 0;
+}
+
+.factorian-service-breadcrumb h3 {
+    margin: 0 0 10px;
+}
+
+
+/*================================
+Single Service Gallery Part CSS
+=================================*/
+
+.gallery-lightbox {
+    position: relative;
+    display:  block;
+    margin-bottom: 35px;
+}
+.gallery-lightbox img {
+    width: 100%
+}
+
+.gallery-lightbox i.fa {
+    position:  absolute;
+    left:  50%;
+    top: 60%;
+    color:  #fff;
+    height:  35px;
+    width:  35px;
+    border:  2px solid;
+    text-align:  center;
+    line-height:  31px;
+    display:  inline-block;
+    border-radius:  50%;
+    margin-left:  -10px;
+    margin-top: -10px;
+    opacity:  0;
+    transition: .3s;
+    z-index: 1;
+}
+
+.gallery-lightbox:hover i.fa {
+    opacity: 1;
+    top: 50%;
+}
+
+.gallery-lightbox::after {
+    height:  100%;
+    width:  100%;
+    content:  "";
+    background:  #000;
+    position:  absolute;
+    top: 0;
+    left:  0;
+    opacity:  0;
+    transition: .2s;
+}
+
+.gallery-lightbox:hover::after {
+    opacity: .4;
+}
+
+/*=============
+How it works?
+==============*/
+
+.single-step-item {
+    position:  relative;
+    margin-top: 35px;
+    padding-left: 55px;
+}
+.single-step-item h3 {
+    margin: 0 0 10px;
+}
+.step-count {
+    position:  absolute;
+    height:  35px;
+    width:  35px;
+    border:  2px solid;
+    text-align:  center;
+    font-size:  20px;
+    font-weight:  700;
+    border-radius: 50%;
+    left:  0;
+    top:  0;
+    display:  inline-block;
+}
+.single-step-item p:last-child {
+    margin: 0;
+}
+
+
+/*========================
+Get a quote Submit Form
+=========================*/
+
+.quote-title {
+    background:  #505050;
+    padding:  18px;
+    color: #fff;
+}
+
+.quote-title h3 {
+    margin: 0 0 5px;
+}
+
+.get-quote-form {
+    box-shadow: 0 0 7px #ccc;
+    padding: 30px;
+}
+.get-quote-form p {
+    margin: 0 0 10px;
+}
+
+.get-quote-form label {
+    display:  block;
+    font-weight: 400;
+}
+
+.get-quote-form input[type="text"], 
+.get-quote-form input[type="email"], 
+.get-quote-form input[type="tel"], 
+.get-quote-form textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+    border:  1px solid #ddd;
+}
+
+.get-quote-form textarea {
+    height: 110px;
+}
+
+input[type="submit"] {
+    background: #fdcd4b;
+    border:  none;
+    padding: 10px 30px;
+    font-size:  13px;
+    font-weight:  700;
+}
+
+.get-quote-form input[type="submit"] {
+    color:  #fff;
+    border-bottom: 4px solid #d6a137;
+    border-radius: 4px;
+}
+
+
+
+/*========================================
+******************************************
+			Conact Page CSS
+******************************************
+==========================================*/
+
+
+.contact-banner {
+    margin: 29px 0 10px;
+}
+
+.contact-heading {
+    margin-top: 20px;
+    color: #9b9b9b;
+}
+
+.contact-info {
+    margin: 12px 0 11px;
+    color:  #222;
+    line-height: 30px;
+    font-size: 24px;
+}
+
+
+
+
+/*=========================================
+*******************************************
+			Blog page CSS
+********************************************
+===========================================*/
+
+
+/*Pagination*/
+
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #f3ba48;
+    border-color: #f3ba48;
+}
+
+.pagination>li>a, 
+.pagination>li>span {
+    color: #222;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+
+
+
+/*======================
+Widget-Sidebar Part css
+========================*/
+
+.widget {
+    border:  1px solid #edeff8;
+    line-height: 25px;
+    margin-bottom:  50px;
+}
+
+/*Widger Search*/
+
+.search-form input[type="search"] {
+    border: none;
+    padding: 15px;
+}
+
+.search-form button[type="submit"] {
+    background:  #fff;
+    border:  none;
+    float:  right;
+    padding: 15px;
+    padding-right: 30px;
+}
+
+
+/*widget.recent-post css*/
+
+.widget.recent-post {
+}
+
+
+h3.widget-title {
+    border-bottom: 1px solid #edeff8;
+    margin:  0;
+    padding:  15px;
+    font-size:  18px;
+}
+
+.widget ul {
+    padding: 20px 20px 20px 30px;
+    margin:  0;
+}
+
+.widget.recent-post li {
+    padding-bottom: 20px;
+}
+
+.recent-post li span {
+    display:  block;
+    color:  #8d9cad;
+    font-size: 13px;
+}
+
+.widget a {
+    color: #222;
+}
+
+.widget li {
+    position:  relative;
+}
+
+.widget li::before {
+    position:  absolute;
+    content: "\f0da";
+    left: -10px;
+    top: 0;
+    font-family: fontawesome;
+}
+
+/*widger category*/
+
+h3.category-title {
+    border-bottom: 1px solid #edeff8;
+    margin: 0;
+    padding:  15px;
+    font-size:  18px;
+}
+
+.widget li {
+    padding-bottom: 10px;
+}
+
+.widget.category-list li {
+    width: 50%;
+    float:  left;
+}
+
+.widget.category-list ul {
+    overflow:  hidden;
+}
+
+
+
+
+/*===============
+Site hover effect
+================*/
+
+.header-top-area a:hover {
+    text-decoration:  none;
+    opacity: 0.8;
+}
+
+a {
+    transition: 0.3s;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+.single-box-item:hover {
+    color: #6e6e6e;
+}
+
+.factorian-btn:hover {
+    text-decoration:  none;
+    background: #333;
+    color:  #fff;
+}
+
+
+

@@ -1,0 +1,243 @@
+/*******************************
+	All Responsive Code
+*******************************/
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.header-top-area a, .header-top-area {
+    color: #fff;
+    font-size: 13px;
+}
+.mainmenu {
+    padding-right: 20px;
+}
+.menu-search-bar {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -20px;
+}
+.menu-search-bar::after {
+    right: 12px;
+    top: 13%;
+}
+.mainmenu li a {
+    padding: 30px 16px;
+}
+
+}
+
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+
+}
+
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+.mainmenu li a {
+    padding: 30px 16px;
+}
+
+.header-top-area, .text-right, .single-slide-item, .factorian-ctn-area, .factorian-ctn-area .text-right {
+    
+    text-align: center;
+}
+.single-slide-item h2{
+	font-size: 40px;
+}
+
+.logo {
+    padding: 20px 0px;
+    text-align: center;
+    padding-bottom: 0;
+    margin: 0;
+}
+.mainmenu li a {
+    padding: 20px 16px;
+}
+.mainmenu ul li:hover ul {
+    opacity: 1;
+    z-index: 9;
+    top: 68px;
+}
+.single-service-item {
+    margin-bottom: 55px;
+}
+.factorian-ctn-area .ctn-btn{
+	margin-top: 16px;
+}
+.who-we-are-text {
+    padding: 20px 0px;
+}
+.youtube-video {
+    margin-top: 30px;
+}
+.section-title h3 {
+    margin: 0;
+}
+.footer-wid {
+    padding-bottom: 0;
+    padding-top: 50px;
+}
+.footer-top-area {
+    padding-bottom: 50px;
+    padding-top: 30px;
+} 
+
+
+}
+
+
+/*Small devices (Tablet, landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+
+
+.header-top-area {
+    background-color: #222;
+    font-size: 11px;
+    padding: 10px 0;
+}
+
+.header-top-area, .text-right, .single-slide-item, .factorian-ctn-area, .factorian-ctn-area .text-right {
+    
+    text-align: center;
+}
+.single-slide-item h2 {
+    font-size: 30px;
+}
+.single-slide-item {
+    font-size: 15px;
+}
+
+
+
+
+
+
+.mainmenu li a {
+    padding: 30px 16px;
+}
+
+
+/*==========================
+Mobile Menu Slick Nav CSS
+===========================*/
+
+
+.mainmenu, .menu-search-bar{
+	display: none;
+}
+
+.responsive-menu-wrap{
+	display: block;
+}
+
+
+.logo {
+    text-align:  left;
+}
+
+
+.responsive-menu-wrap {
+    position:  absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -16px;
+        width: 200px;
+}
+
+.mainmenu-area {
+    position:  relative;
+    z-index: 9;
+}
+
+.responsive-menu-wrap .slicknav_menu {
+    padding:  0;
+    margin:  0;
+    background:  none;
+}
+
+.responsive-menu-wrap .slicknav_btn {
+    margin: 0;
+}
+
+.slicknav_btn {
+	margin:0;
+}
+
+.slicknav_nav {
+    background: #333;
+    border-radius: 2px;
+    width: 200px;
+}
+
+.current_page_item > a {
+    background-color: #f6bd49;
+    text-decoration: none;
+}
+.current_page_item:hover > a {
+    background-color: #f6bd49;
+    
+}
+
+
+
+/*===========================
+Slider Responsive Part CSS
+============================*/
+
+.single-slide-item {
+    height: 450px;
+}
+
+.homepage-slides .owl-nav div {
+    position:  relative;
+    color:  #333;
+    margin:  0;
+    display:  inline-block;
+}
+
+.homepage-slides .owl-nav {
+    text-align:  center;
+    margin-top: 5px;
+}
+
+.homepage-slides .owl-nav div.owl-next, .homepage-slides .owl-nav div {
+    left:  auto;
+    right:  auto;
+    margin:  10px;
+}
+
+
+
+
+.single-service-item {
+    margin-bottom: 55px;
+}
+.factorian-ctn-area .ctn-btn{
+	margin-top: 16px;
+}
+.who-we-are-text {
+    padding: 20px 0px;
+}
+.youtube-video {
+    margin-top: 30px;
+}
+.section-title h3 {
+    margin: 0;
+}
+
+.footer-wid {
+    padding-bottom: 0;
+    padding-top: 50px;
+}
+.footer-top-area {
+    padding-bottom: 50px;
+    padding-top: 30px;
+} 
+
+}
+
